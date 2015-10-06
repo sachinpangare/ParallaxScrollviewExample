@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/flWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/contactPic"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stock" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="250dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="18sp"
+                android:text="4. Handle ListView Scroll Events
+Following step will guide you with the necessary things required in your activity to create list view, add list header and implement parallax effect.Let us now create an activity and set the layout by calling setContentView() method inside onCreate() lifecycle callback.
+Initialize list view and create an array adapter, which will be used for the list view.Inflate list header layout and set to list view by calling listView.addHeaderView() method.
+Handle user scroll events for list view and change the position Y of list header.For handling the user scroll event, you need to implement AbsListView.OnScrollListener interface to your activity or fragment class and override the onScrollStateChanged and onScroll method. The onScroll method will be called when user scrolls the list view up or downwards."
+                android:id="@+id/textView1"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.23" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</ScrollView>
